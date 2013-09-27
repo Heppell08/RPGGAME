@@ -1,13 +1,15 @@
 package  
 {
+    import org.flixel.*;
 	/**
 	 * ...
 	 * @author Mixta
 	 */
-	public class PlayState 
+	public class PlayState extends FlxState
 	{
+	// declare variables in here.
 		
-		public function PlayState() 
+	override public function create():void 
 		{
 			
 		}
