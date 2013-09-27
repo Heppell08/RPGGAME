@@ -1,28 +1,17 @@
-package 
+package  
 {
-	import flash.display.Sprite;
-	import flash.events.Event;
-
-	/**
-	 * ...
-	 * @author Mixta
-	 */
+	import org.flixel.*;
+	
+	[SWF(width = "640", height = "480", backgroundColor = "#001100")]
 	[Frame(factoryClass="Preloader")]
-	public class Main extends Sprite 
-	{
-
-		public function Main():void 
+	
+	public class Main extends FlxGame
+	{	
+		public function Main() 
 		{
-			if (stage) init();
-			else addEventListener(Event.ADDED_TO_STAGE, init);
+			super(320, 240, MenuState, 2);
 		}
-
-		private function init(e:Event = null):void 
-		{
-			removeEventListener(Event.ADDED_TO_STAGE, init);
-			// entry point
-		}
-
+		
 	}
 
 }
